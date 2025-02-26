@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <h2>Game "Guess number"</h2>
+        <p id="guess-enter">Enter any number from 1 to 100</p>
+        <input type="number" oninput="this.value = 
+ !!this.value && Math.abs(this.value) >= 1 ? Math.abs(this.value) : null" id="guess-number">
+        <div id="answer"></div>
+        <button type="button" id="try-luck">Try your luck</button>
+        <div id="tries">Number of guesses: <span id="guesses"></span></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
